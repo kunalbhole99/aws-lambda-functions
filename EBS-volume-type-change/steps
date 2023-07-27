@@ -4,7 +4,8 @@
 
 2: add code into the .py file.
 
-3: create cloudwatch event for ebs volume notification with 'create volume' action. So that whenever the new ebs volume is created with 'gp2' type then it will automatically trigger function and convert it into 'gp3' type.
+3: create cloudwatch event for ebs volume notification with 'create volume' action. So that whenever the new ebs volume is created with 'gp2' type 
+   then it will automatically trigger function and convert it into 'gp3' type.
 
 4: add trigger and target to lambda function.
 
