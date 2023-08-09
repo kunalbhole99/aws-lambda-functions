@@ -1,0 +1,5 @@
+# set environment variables in lambda functions:
+
+- s3_bucket
+- s3_file_key
+- nacl_id
