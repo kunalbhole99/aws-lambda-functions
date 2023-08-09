@@ -1,0 +1,16 @@
+# Prevent security group to open from internet:
+
+1- create lambda function and add the provided code
+
+2- create cloudwatch event follow with - 
+   ec2--> AWS-api-call-via-cloudtrail-->CreateSecurityGroup, AuthorizeSecurityGroupIngress
+
+3- Add target to lambda function
+
+4- Lambda role requires below actions:
+
+"Action": [
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:DescribeSecurityGroups"
+            ]
+
